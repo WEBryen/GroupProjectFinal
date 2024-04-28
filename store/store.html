@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="store.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Button')">
+        Button
+      </button>
+      <div class="edit">
+        <a href="../editor/editor.html"><img src="Edit.svg"></a>
+      </div>
+
+      <button class="tablinks" onclick="openTab(event, 'Template')">
+        Template
+      </button>
+    </div>
+    <button onclick="history.back()" class="goBack">Go Back</button>
+    <div id="Button" class="tabcontent">
+      <span
+        onclick="this.parentElement.style.display='none'"
+        class="topright btn"
+        >&times</span
+      >
+      <iframe src="button/buttons.html"></iframe>
+    </div>
+    <div id="Template" class="tabcontent">
+      <span
+        onclick="this.parentElement.style.display='none'"
+        class="topright tmp"
+        >&times</span
+      >
+      <iframe src="TEMPLATE/template.html"></iframe>
+    </div>
+    <div class="startup">
+      <div class="Greet">
+        <h1>WElcome to Store! check out our newest assets</h1>
+        <div class="img">
+          <img src="cart.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="store.js"></script>
+  </body>
+</html>

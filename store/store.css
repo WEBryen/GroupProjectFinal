@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.tab {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+.goBack {
+  position: absolute;
+  translate: 100px -49px;
+  text-align: center;
+  width: 100px;
+  background-color: #fff;
+  border: none;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  border: 1px solid #000;
+  margin-top: 15px;
+}
+
+.edit{
+    position: absolute;
+    translate: 800px -39px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: #000 solid 1px;
+}
+
+.edit:hover{
+  background-color: #c6c6c6;
+}
+.edit img{
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.goBack:hover {
+  background-color: #e7e4e4;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  border: none;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e7e4e4;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #000000;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  width: 100%;
+  height: fit-content;
+}
+
+/* Style the close button */
+.topright {
+  text-align: center;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.btn {
+  position: absolute;
+  translate: 475px -48px;
+}
+
+.tmp {
+  position: absolute;
+  translate: 950px -48px;
+}
+
+.topright:hover {
+  animation: rotate;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 94vh;
+  border: none;
+}
+
+.startup {
+  width: 100%;
+  height: 1000px;
+}
+iframe{
+  z-index: 100;
+}
+.img {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  z-index: 0;
+  translate: 500px 300px;
+}
+
+.Greet h1{
+  text-align: center;
+  position: absolute;
+  translate: 350px 150px;
+  width: 800px;
+  background-color: #fff;
+  border: none;
+  padding: 14px 16px;
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}

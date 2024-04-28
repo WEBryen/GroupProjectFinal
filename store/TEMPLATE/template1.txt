@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html
+        {
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: gray;
+        }
+        .homepage
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(37, 61, 98);
+            background-color: rgba(128, 128, 128, 0.174);
+            margin-bottom: 10px;
+        }
+
+        .first_instance
+        {
+            height: 90vh;
+            width: 100%;
+            /*background-color: rgb(27, 68, 109) ;*/
+            
+        }
+        .left_instance
+        {
+            background-color: rgb(111, 106, 100);
+            height: 500px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3em;
+            flex-grow: 1;
+            padding: 0 40px;
+        }
+        p
+        {
+            width: 20%;
+            align-content: center;
+            text-align: center;
+        }
+        .leftdiv,.middlediv,.rightdiv
+        {
+            width: 21em;
+            height: 25em;
+            background-color: grey;
+            box-shadow: 5px 5px 25px black;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-align: center;
+            align-content: center;
+        }
+        .footer
+        {
+            background-color: rgb(121, 132, 142);
+            height: 100px;
+            width: 100%;
+            align-content: center;
+            text-align: center;
+            background-color: rgb(111, 106, 100);
+        }
+        .info
+        {
+            background-color: rgb(142, 133, 123);
+            width: 100%;
+            height: 100px;
+
+            background-color: rgb(111, 106, 100);
+        }
+        .para
+        {
+            width: 100%;
+        }
+        @media only screen and (max-width: 900px) 
+        {
+            .left_instance
+            {
+               height: 100%;
+               flex-direction: column; 
+            }
+            .info
+            {
+            background-color: rgb(142, 133, 123);
+                height: 100px;
+            }
+            .leftdiv,.middlediv,.rightdiv
+            {
+                max-width: 80%;
+                padding: 30px;
+            }
+            p
+            {
+                width: 100%;
+            }
+        }
+
+        .final_instance
+        {
+            height: 80vh;
+            align-content: center;
+        }
+
+        .sections
+        {
+            width: 50%;
+            margin: 0 auto;
+            height: 400px;
+            background-color: rgb(111, 106, 100);
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="homepage">
+    </div>
+    <nav>
+    </nav>
+    <div class="first_instance">
+        <div class="left_instance">
+            <div class="leftdiv"></div>
+            <div class="middlediv"></div>
+            <div class="rightdiv"></div>
+        </div>
+        <div class="info">
+        </div>
+        <div class="final_instance">
+            <div class="sections">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>
